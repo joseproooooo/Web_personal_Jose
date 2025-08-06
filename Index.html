@@ -3,12 +3,111 @@
 <head>
     <meta charset="UTF-8" />
     <title>La web de  Jose Alcalá</title>
-    <link rel="icon" href="Images/Favicon.png" type="image/png">
+    <link rel="icon" href="Images/Favicon.png" type="image/png"> <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: rgb(64, 80, 110);
+            color: white;
+            padding: 20px 0 10px 0;
+            margin-bottom: 20px;
+        }
+        nav h2 {
+            margin-left: 30px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-left: 30px;
+        }
+        nav ul li {
+            margin: 8px 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        section, footer {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 700px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        h1, h2, h3 {
+            color: #2d6cdf;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #bbb;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #2d6cdf;
+            color: white;
+        }
+        button {
+            background: #2d6cdf;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background: #1b458b;
+        }
+        input[type="text"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        details summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
+
 </head>
 <body>
+    <section>
+        <body>
+    <!-- Índice de la página -->
+    <nav>
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#quien-soy">¿Quién Soy?</a></li>
+            <li><a href="#familia">¿Quién conforma mi Familia?</a></li>
+            <li><a href="#amigos">Mis Mejores amigos</a></li>
+            <li><a href="#sueños">Mis Sueños</a></li>
+            <li><a href="#curiosidades">Datos curiosos</a></li>
+            <li><a href="#hecho-nohecho">¿Qué he hecho y que no?</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <!-- ...código existente... -->
+                    <section>
     <h1>La web de Jose Alcalá</h1>
-    <img src="Images/imagen.jpg" alt="Foto de Jose Alcalá" width="200" height="300" />
-    <h3>¿Quién Soy?</h3>
+    <img src="Images/imagen.jpg" alt="Foto de Jose Alcalá" width="200" height="300" /></section>
+    <section id="quien-soy"><h3>¿Quién Soy?</h3>
     <p>Mi Nombre completo es: Jose Alejandro Alcalá Quiñonez
         Tengo 14 años de edad
         Naci el 18 de febrero del 2011
@@ -16,7 +115,8 @@
         Juego en la Posicion de defensa central 
         Estudio 2do año en el colegio Teresiano Guacara
         Soy un programador del curso <a href="https://www.freecodecamp.org/learn">Free Code Camp</a>
-    </p>
+    </p></section>
+    <section id ="familia">
     <h2>¿Quién conforma mi Familia?</h2>
     <h3>Mi Padre</h3>
     <p>Mi padre se llama: Jose Alexander Alcalá Salazar
@@ -38,7 +138,8 @@
         Nació el 30 de agosto de 2019
         Estudia en el colegio Teresiano Guacara
         Le gusta jugar futbol y ver videos en  youtube
-    </p>
+    </p></section>
+    <section id="amigos">
     <h2>Mis Mejores amigos son</h2>
     <ul>
         <li>Seastian Sosa</li>
@@ -49,6 +150,8 @@
         <li>Karen Requena</li>
         <li>Antonella Orsini</li>
     </ul>
+    </section>
+    <section ID="sueños">
 
     <h2>Mis Sueños</h2>
     <p>Mis sueños son:</p> 
@@ -60,6 +163,8 @@
             <li>Viajar por todo el mundo</li>
             <li>Conocer a mis futbolistas favoritos: Erling Haaland y Julián Alvarez</li> 
         </ul>
+    </section>
+    <section id="curiosidades">
         <details>
             <summary>Datos curiosos</summary>
             <ul>
@@ -70,11 +175,11 @@
                 <li>Mi comida favorita es la arepa</li>
                 <li>Mi videojuego favorito es Minecraft</li>
             </ul>
-
-
-
-            
         </details>
+        </section>
+
+    
+    <section id="hecho-nohecho">
     <h2>¿Qué he hecho y que no?</h2>
         
     <table>
@@ -99,7 +204,7 @@
 
             </tr>
             <tr>
-                <td>Racar 20 en mi boleta</td>
+                <td>Sacar 20 en mi boleta</td>
                 <td>Raspar un examen</td>
 
             </tr>
@@ -118,13 +223,15 @@
             </tr>
         </tbody>
     </table>
- 
+    </section>
+    <footer id="contacto">
     <form action="https://formsubmit.co/jaag00654d@gmail.com" method="POST">
     <h2>¿Quieres conocer  más de mi?</h2>
     <label for="pregunta">Hazme la pregunta que quieras:</label>
     <input type="text" id="pregunta" name="pregunta" placeholder="Ejemplo: ¿Qué haces en tus tiempo libre?" required>
     <button type="submit">Enviar</button>
 </form>
+</footer>
 
 </body>
 </html>
